@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto&display=swap');
+*{
+    -webkit-box-sizing: border-box;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    color: #1c1c1c;
+    font-weight: 400;
+}
+li.nav-item{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+li.nav-item:hover{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background-color: rgb(19,132,150);
+    border-radius: 10px;
+    transition: background-color 0.2s linear;
+}
+.is-home .single-anons, .is-category .single-anons, .is-tags .single-anons, .is-author .single-anons {
+    min-height: 286px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 80px;
+    padding: 23px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 14px 0px #28a745;
+}
+@media only screen and (max-width: 768px){
+    .is-home .single-anons, .is-category .single-anons, .is-tags .single-anons, .is-author .single-anons {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .is-home .single-anons .descript-wrap, .is-single .single-content .descript-wrap, .is-category .single-anons .descript-wrap, .is-tags .single-anons .descript-wrap, .is-author .single-anons .descript-wrap {
+        text-align: left;
+    }
+}
+p.category{
+    margin-top: 5px;
+    opacity: 0.5;
+}
+.single-anons a:hover{
+    text-decoration: none;
+    color: black;
+}
+.single-anons a{
+    text-decoration: none;
+    color: black;
+}
+#filter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 40px;
+}
+#map{
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 14px 0px #3a96b4;
+    margin-left: 60px;
+    margin-bottom: 65px;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* чтобы весь футер заливался */
+footer .row{
+    background-color: #193441;
+}
+footer a{
+    margin-left: 10px;
+    color: white;
+}
+footer a:hover{
+    margin-left: 10px;
+    color: #3a96b4;
+}

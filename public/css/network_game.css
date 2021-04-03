@@ -1,0 +1,27 @@
+.network_game {
+    min-height: 286px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 80px;
+    padding: 23px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 14px 0px #28a745;   
+}
+@media only screen and (max-width: 768px){
+    .network_game {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .network_game {
+        text-align: left;
+    }
+}
+.network_game a:hover{
+    text-decoration: none;
+    color: #28a745;
+}
+.network_game a{
+    text-decoration: none;
+    color: #3a96b4;
+}
