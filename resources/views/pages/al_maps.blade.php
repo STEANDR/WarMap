@@ -48,9 +48,13 @@
                         </div>
                     </div>
                     @endforeach
+                    {{$maps->links('vendor.pagination.bootstrap-4')}}
                 </div>
             </div>
         </div>
     </div>
+
+
+
 
 @endsection
