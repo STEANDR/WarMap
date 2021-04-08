@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+.single-content .descript-wrap {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+.views{
+    float: right;
+    margin-right: 10px;
+}
+.single-content {
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 23px;
+    box-shadow: 0px 0px 14px 0px #3a96b4;
+    font-size: 20px;
+}
+.single-content .category a{
+    color: black;
+}
+.single-content .category a:hover{
+    color: black;
+}
+.single-img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+.single-content a:hover{
+    text-decoration: none;
+    color: white;
+}
+.single-content a{
+    text-decoration: none;
+    color: white;
+}
+

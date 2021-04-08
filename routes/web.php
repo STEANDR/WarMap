@@ -17,4 +17,5 @@ use App\Http\Controllers\NetworkGame;
 
 Route::get('/maps', [AllMapsController::class, 'index'])->name('allMaps');
 Route::get('/networkGame', [NetworkGame::class, 'index'])->name('networkGame');
-Route::get('/maps/category/{slug}',[AllMapsController::class, 'getMapsByCategory'])->name('getMapsByCategory');
+Route::get('/maps/{slug_category}',[AllMapsController::class, 'getMapsByCategory'])->name('getMapsByCategory');
+Route::get('/map/{slug_map}',[AllMapsController::class, 'getMap'])->name('getMap');
