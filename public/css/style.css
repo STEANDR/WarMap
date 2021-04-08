@@ -43,9 +43,13 @@ li.nav-item:hover{
         text-align: left;
     }
 }
-p.category{
+a.category:active, /* активная/посещенная ссылка */
+a.category:hover,  /* при наведении */
+a.category {
+    text-decoration: none;
     margin-top: 5px;
     opacity: 0.5;
+    color: black;
 }
 .single-anons a:hover{
     text-decoration: none;

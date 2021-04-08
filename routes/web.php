@@ -13,5 +13,5 @@ use App\Http\Controllers\AllMapsController;
 |
 */
 
-Route::get('/', [AllMapsController::class, 'index']);
+Route::get('/', [AllMapsController::class, 'index'])->name('mainPage');
 Route::get('/maps/category/{slug}',[AllMapsController::class, 'getMapsByCategory'])->name('getMapsByCategory');

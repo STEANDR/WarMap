@@ -3,21 +3,21 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="У нас на сайте вы можете скачать карты для Warcraft 3 и Reforged, а также узнать много нового про игры Blizzard и последние новости, связанные с ними." />
+    <meta name="description"
+          content="У нас на сайте вы можете скачать карты для Warcraft 3 и Reforged, а также узнать много нового про игры Blizzard и последние новости, связанные с ними."/>
 
     <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <link rel="stylesheet" href={{asset('css/style.css')}}>
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <!-- Иконки -->
     <script src="https://kit.fontawesome.com/54badee641.js" crossorigin="anonymous"></script>
 
     <!--Иконка сайта-->
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon"/>
 
     <title>@yield('title')</title>
 </head>
@@ -25,7 +25,7 @@
 <!--Меню-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <!-- Лого-->
-    <a href="/index.php" class="navbar-brand">
+    <a href="/" class="navbar-brand">
         <img src="/images/Logo.png" width="100" height="50" alt="logo"/>
     </a>
 
@@ -55,10 +55,12 @@
                 <a href="../networkGame.php" class="nav-link disabled"><i class="fas fa-server"></i></i>Игра по сети</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link disabled" data-toggle="modal" data-target="#exampleModalOne"><i class="fas fa-question"></i>Помощь</a>
+                <a href="#" class="nav-link disabled" data-toggle="modal" data-target="#exampleModalOne"><i
+                        class="fas fa-question"></i>Помощь</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link disabled" data-toggle="modal" data-target="#exampleModalTwo"><i class="fas fa-gift"></i>Предложить карту</a>
+                <a href="#" class="nav-link disabled" data-toggle="modal" data-target="#exampleModalTwo"><i
+                        class="fas fa-gift"></i>Предложить карту</a>
             </li>
         </ul>
     </div>
@@ -77,7 +79,14 @@
         <a href="#" class=" btn btn-outline-light ml-3">Подняться наверх</a>
     </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 </body>
 </html>
