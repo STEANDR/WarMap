@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('description', 'У нас на сайте вы можете скачать карты для Warcraft 3 и Reforged, а также узнать много нового про игры Blizzard и последние новости, связанные с ними.')
 @section('title', 'Карты Warcraft 3')
 
 

@@ -7,7 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
-          content="У нас на сайте вы можете скачать карты для Warcraft 3 и Reforged, а также узнать много нового про игры Blizzard и последние новости, связанные с ними."/>
+          content="@yield('description')"/>
 
     <!--CSS-->
     <link rel="stylesheet" href={{asset('css/style.css')}}>
@@ -25,8 +25,8 @@
 <!--Меню-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <!-- Лого-->
-    <a href="/" class="navbar-brand">
-        <img src="/images/Logo.png" width="100" height="50" alt="logo"/>
+    <a href="{{route('allMaps')}}" class="navbar-brand">
+        <img src="{{asset('images/Logo.png')}}" width="100" height="50" alt="logo"/>
     </a>
 
     <button
@@ -43,16 +43,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a href="../index.php" class="nav-link disabled"><i class="fas fa-home"></i>Главная</a>
-            </li>
-            <li class="nav-item">
-                <a href="../maps.php" class="nav-link"><i class="fas fa-map"></i>Карты</a>
-            </li>
-            <li class="nav-item">
-                <a href="../companies.php" class="nav-link disabled"><i class="fab fa-fort-awesome-alt"></i>Компании</a>
+                <a href="{{route('allMaps')}}" class="nav-link"><i class="fas fa-map"></i>Карты</a>
             </li>
             <li class="nav-item ">
-                <a href="../networkGame.php" class="nav-link disabled"><i class="fas fa-server"></i></i>Игра по сети</a>
+                <a href="{{route('networkGame')}}" class="nav-link"><i class="fas fa-server"></i></i>Игра по сети</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link disabled" data-toggle="modal" data-target="#exampleModalOne"><i

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AllMapsController;
+use App\Http\Controllers\NetworkGame;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +15,6 @@ use App\Http\Controllers\AllMapsController;
 |
 */
 
-Route::get('/', [AllMapsController::class, 'index'])->name('mainPage');
+Route::get('/maps', [AllMapsController::class, 'index'])->name('allMaps');
+Route::get('/networkGame', [NetworkGame::class, 'index'])->name('networkGame');
 Route::get('/maps/category/{slug}',[AllMapsController::class, 'getMapsByCategory'])->name('getMapsByCategory');
